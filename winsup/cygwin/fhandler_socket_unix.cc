@@ -76,6 +76,9 @@
    A bound DGRAM socket sends its sun_path with each sendmsg/sendto.
 */
 
+#define STATUS_THREAD_SIGNALED	((NTSTATUS)0xE0000001)
+#define STATUS_THREAD_CANCELED	((NTSTATUS)0xE0000002)
+
 #define MAX_AF_PKT_LEN	65536
 
 class af_unix_pkt_hdr_t
